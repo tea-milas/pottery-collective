@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+}
+
+nav > h2 {
+    width: 20%;
+    color: rgb(255, 248, 236);
+    text-shadow: 1px 1px rgb(167, 152, 130);;
+    margin: 15px 20px;
+}
+
+/* navigation menu */
+
+nav > ul {
+    margin: 15px 20px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav > ul > li {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    text-transform: lowercase;
+    text-decoration: none;
+    color: rgb(255, 248, 236);
+}
+
+nav > ul > li > a:hover {
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+
+/* HEADER */
+
+#header-text {
+    position: absolute;
+    z-index: 10;
+    top: 250px;
+    left: 100px;
+
+    width: 35%;
+    font-size: xxx-large;
+    color: rgb(255, 248, 236);
+    text-shadow: 1px 1px rgb(167, 152, 130);
+}
+
+.paralax {
+  background-image: url("./assets/img/pexels-gabby-k-5302892.jpg");
+  height: 750px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* CONTENT */
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+#pageTitle {
+    text-align: center;
+    color: rgb(56, 47, 31);
+    text-shadow: 1px 2px papayawhip;
+    padding-bottom: 50px;
+}
+
+/* IMAGE & OVERLAY */
+
+/* the entire section */
+#grid-items {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 7% 4%;
+    margin-bottom: 15%;
+}
+
+/* single section */
+.listing {
+    position: relative;
+}
+
+.listing-img {
+    width: 300px;
+    height: 370px;
+}
+
+.listing-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+}
+
+.text{
+    display: none;
+} 
+
+.listing:hover .listing-text .text {
+    background-color: rgba(188, 143, 143, 0.217);
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+    text-align: center;
+    font-size: larger;
+    color: white; 
+}
+
+
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    text-align: center;
+    background-color:  rgb(235, 221, 193);
+    padding: 15px;
+    min-height: 50px;
+}
+
+#footer-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+}
+
+#footer-logo {
+    font-size: larger;
+    color:white;
+    text-shadow: 2px 2px rgb(167, 152, 130);
+    margin-top: 10%;
+    
+}
+
+#footer-info > p {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: small;
+    padding-top: 10%;
+    color: rgb(56, 47, 31);
+
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#newsletter {
+    text-align: center;
+}
+
+#newsletter > h4 {
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    text-shadow: 2px 2px rgb(167, 152, 130);
+}
+
+#newsletter-form {
+    display: block;
+}
+
+#newsletter-form > input {
+    background-color:  rgba(255, 255, 255, 0.8);
+    border: 1px solid  rgb(162, 176, 191);
+    color: rgb(123, 141, 160);
+    height: 20px;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#subscribe {
+    color: rgb(123, 141, 160);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid  rgb(162, 176, 191);
+    padding: 10px 20px;
+    margin: 8px 10px 15px 10px;
+}
+
+#subscribe:hover {
+    background-color:  rgba(255, 255, 255, 0.8);
+    border: 1px solid white;
+    color:  rgb(162, 176, 191);
+    transition-duration: 0.15s;
+}
+
+#subscribe:active {
+    transform: scale(0.9);
+}
+
+
+#links ul {
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    text-align: center;
+}
+
+#links > ul > li > a {
+    text-align: center;
+    font-size: small;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+#links > ul > li > a:hover {
+    color:white;
+}
+
+#credits {
+    padding:20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+
+#credits > p {
+    text-align: center;
+}

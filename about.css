@@ -1,0 +1,54 @@
+.paralax {
+    background-image: url("./assets/img/pexels-gabby-k-5302894.jpg");
+    
+  }
+
+#title {
+    margin: 8px 30px 15px 30px;
+    text-align: left;
+    color: burlywood;
+
+}
+
+#about-us-text {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+
+
+}
+
+#about-us-text > p {
+    margin-top: 30px;
+    width: 50%;
+}
+
+#about-img {
+    position: relative;
+    right: 50px;
+    z-index: -1;
+    margin: 10px;
+    width: 500px;
+    height: 350px;
+}
+
+#about-img2 {
+    position: relative;
+    left: 50px;
+    top: -100px;
+    z-index: -1;
+    margin: 10px;
+    width: 500px;
+    height: 350px;
+}
+
+#about-logo {
+    position: absolute;
+    width: 500px;
+    margin-left: 60%;
+    margin-top: -12%;
+    
+    font-size: xx-large;
+    font-style: italic;
+    color: burlywood;
+}

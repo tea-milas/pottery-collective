@@ -1,0 +1,44 @@
+.paralax {
+    background-image: url("./assets/img/pexels-gabby-k-5302891.jpg"); 
+  }
+
+  #title {
+    margin: 8px 30px 15px 30px;
+    text-align: left;
+    color: burlywood;
+}
+
+#contact > p { 
+    margin-top: 50px;
+    color: burlywood;
+    text-align: center;
+}
+
+#contact-form {
+    display: grid;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+#contact-form > input, select, textarea {
+    background-color:  rgba(255, 255, 255, 0.8);
+    border: 1px solid  rgb(162, 176, 191);
+    color: rgb(123, 141, 160);
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#contact-form > select {
+    height: 42px;
+    width: 500px;
+}
+
+#submit:hover {
+    align-items: center;
+    background-color:  rgb(235, 221, 193);
+    border: 1px solid white;
+    color: white;
+    transition-duration: 0.15s;
+}

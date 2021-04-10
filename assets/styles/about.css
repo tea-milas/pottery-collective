@@ -10,7 +10,7 @@
 
 }
 
-#about-us-text {
+.about-us-text {
     display: flex;
     justify-content: space-around;
     margin: 10px 20px;
@@ -18,7 +18,7 @@
 
 }
 
-#about-us-text > p {
+.about-us-text > p {
     margin-top: 30px;
     width: 50%;
 }
@@ -51,4 +51,86 @@
     font-size: xx-large;
     font-style: italic;
     color: burlywood;
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+   {
+    main {
+        margin-bottom: 0;
+    }
+    #title {
+       font-size: 40px;
+    
+    }
+    #about-content {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .about-us-text {
+        font-size: 27px;
+        margin-bottom: 5%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .about-us-text > p {
+        margin: 30px 0;
+        width: 100%;
+    }
+    
+    #about-img {
+        position: sticky;
+        margin: 2% 0;
+        width: 80%;
+        height: auto;
+    }
+    
+    #about-img2 {
+        position: static;
+        margin-bottom: 2%;
+        width: 80%;
+        height: auto;
+    }
+
+    #about-logo {
+        position: sticky;
+        width: 40%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+   
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 880px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
 }

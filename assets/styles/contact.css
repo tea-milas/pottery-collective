@@ -1,44 +1,75 @@
 .paralax {
-    background-image: url("../img/pexels-gabby-k-5302891.jpg"); 
-  }
-
-  #title {
-    margin: 8px 30px 15px 30px;
-    text-align: left;
-    color: burlywood;
+  background-image: url("../img/pexels-gabby-k-5302891.jpg");
 }
 
-#contact > p { 
-    margin-top: 50px;
-    color: burlywood;
-    text-align: center;
+#title {
+  margin: 8px 30px 15px 30px;
+  text-align: left;
+  color: burlywood;
+}
+
+#contact > p {
+  margin-top: 50px;
+  color: burlywood;
+  text-align: center;
 }
 
 #contact-form {
-    display: grid;
-    justify-content: space-around;
-    margin: 20px;
+  display: grid;
+  justify-content: space-around;
+  margin: 20px;
 }
 
+#contact-form > input,
+select,
+textarea {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(162, 176, 191);
+  border-radius: 5px;
+  color: rgb(189, 126, 74);
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  resize: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-#contact-form > input, select, textarea {
-    background-color:  rgba(255, 255, 255, 0.8);
-    border: 1px solid  rgb(162, 176, 191);
-    color: rgb(123, 141, 160);
-    height: 30px;
-    padding: 5px;
-    margin: 5px;
+#contact-form > input:active {
+  border: 1px solid rgb(189, 126, 74);
 }
 
 #contact-form > select {
-    height: 42px;
-    width: 500px;
+  height: 42px;
+  width: 500px;
+}
+
+#submit {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(162, 176, 191);
+  border-radius: 5px;
+  color: rgb(123, 141, 160);
+  padding: 5px;
+  margin: 5px;
+  height: 40px;
+  cursor: pointer;
 }
 
 #submit:hover {
-    align-items: center;
-    background-color:  rgb(235, 221, 193);
-    border: 1px solid white;
-    color: white;
-    transition-duration: 0.15s;
+  align-items: center;
+  background-color: rgb(209, 176, 148);
+  border: 1px solid white;
+  color: white;
+  transition-duration: 0.15s;
+}
+
+@media only screen and (max-device-width: 780px) {
+  #title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-device-width: 880px) and (orientation: portrait) {
+  main {
+    height: calc(100vh - 950px);
+    min-height: unset;
+  }
 }

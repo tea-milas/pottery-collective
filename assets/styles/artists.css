@@ -1,35 +1,51 @@
 .paralax {
-    background-image: url("../img/pexels-gabby-k-5302896.jpg"); 
-  }
-  
-
-#title {
-    margin: 8px 30px 15px 30px;
-    text-align: left;
-    color: burlywood;
+  background-image: url("../img/pexels-gabby-k-5302896.jpg");
 }
 
+#title {
+  margin: 8px 30px 15px 30px;
+  text-align: left;
+  color: burlywood;
+}
+
+#artists {
+  display: flex;
+  flex-direction: column;
+}
 
 #artist-profile {
-    display: flex;
-    justify-content: center;
+  width: 95%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #artist-profile > p {
-    margin-top: 10%;
-    margin-left: 5%;
-    width: 60%;
+  margin-left: 5%;
+  width: 70%;
 }
 
 #artist-profile > p > b {
-    color: burlywood;
-    font-size: larger;
-
+  color: burlywood;
+  font-size: larger;
 }
 
 #artist-profile-pic {
-    position: relative;
-    margin: 30px 20px;
-    width: auto;
-    height: 400px;
+  width: 280px;
+  height: auto;
+}
+
+@media only screen and (max-device-width: 780px) {
+  #title {
+    font-size: 50px;
+  }
+
+  #artist-profile > p {
+    font-size: 28px;
+  }
+
+  #artist-profile-pic {
+    margin-top: 80px;
+  }
 }
